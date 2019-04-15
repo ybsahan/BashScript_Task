@@ -1,6 +1,7 @@
 #!/bin/bash
-
-for i in $(seq $1)
+i=0
+while [ $i -lt $1 ]
 do
+	((i++))
 	rm -r osman$i.txt
 done
